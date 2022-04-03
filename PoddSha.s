@@ -7,7 +7,8 @@ section .text
     mov eax, 7
     cpuid;
     test ebx, 29
-    jz Print2jnz Print
+    jz Print2
+    jnz Print
     ret
 Print:
     mov rdi, msga
