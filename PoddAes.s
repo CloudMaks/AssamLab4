@@ -3,7 +3,8 @@ extern printf
 section .text
     main:
     push rbp
-    mov rbp, rsp ;mov eax, 1;
+    mov rbp, rsp ;
+    mov eax, 1;
     cpuid;
     test ecx, 25
     jz Print2
