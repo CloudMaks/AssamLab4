@@ -11,7 +11,8 @@ section .text
     jz Print2
     ret
 Print:
-    mov rdi, msgaxor rax, rax
+    mov rdi, msga
+    xor rax, rax
     call printf
     ret
 Print2:
