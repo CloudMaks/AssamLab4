@@ -13,7 +13,8 @@ section .text
 Print:
     mov rdi, msga
     xor rax, rax
-    call printfret
+    call printf
+    ret
 Print2:
     mov rdi, msgb
     xor rax, rax
